@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css""
+    rel=" nofollow">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sermind Cafe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/SERMIND_CAFE.png" alt="" /></a>
+        <div class="nav-link" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="products.php">PRODUCTS</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Products</h1>
+    </section>
+
+    <!-- Our Products content -->
+    <section class="Products-page">
+      <div class="row">
+        <div class="Products-page-col">
+          <a href="coffee-equip.php">
+            <img src="images/CoffeMachine.png" />
+            <div class="centered-text">Coffee Equipment</div>
+          </a>
+        </div>
+
+        <div class="Products-page-col">
+          <a id="coffeeroaster" href="coffee-roaster.php">
+            <img src="images/coffee-pack.png" />
+            <div class="centered-text">Coffee Roaster</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <div>
+        <h4>About Us</h4>
+        <p>
+          Sermind Café ร้านกาแฟและเครื่องดื่มที่หลากหลาย
+          เพื่อรองรับลูกค้าในหลากหลายกลุ่ม
+          ด้วยบรรยากาศที่ร่มรื่นและมีเอกลักษณ์เฉพาะตัว
+        </p>
+
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-youtube-play"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScrupt for Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
